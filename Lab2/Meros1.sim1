@@ -1,0 +1,93 @@
+<circuit version="1.1.0-SR2" rev="260312" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="MCU" CircId="mega328PB-2" mainComp="false" Show_id="true" Show_Val="false" Pos="-68,-12" rotation="0" hflip="1" vflip="1" label="mega328PB-2" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Program="../../../Documents/Atmel Studio/7.0/AssemblerApplication1/AssemblerApplication1/Debug/AssemblerApplication1.hex" Auto_Load="true" saveEepr="true" Ext_Osc="false" Wdt_enabled="false" Clk_Out="false" MainMcu="true" eeprom="4,192,255,255,255,255,255,255,21,192,143,239,141,191,136,224,142,191,142,225,135,185,136,39,138,185,129,224,139,185,140,224,128,147,105,0,130,224,141,187,0,39,120,148,128,47,136,15,136,185,252,207,127,147,143,147,159,147,159,183,159,147,72,155,2,192,3,149,15,112,128,232,149,226,121,239,122,149,0,0,233,247,1,151,209,247,130,224,140,187,159,145,159,191,159,145,143,145,127,145,24,149,0," SerialMon="-1" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-6" mainComp="false" Show_id="false" Show_Val="false" Pos="-92,-108" rotation="0" hflip="1" vflip="1" label="Fixed Voltage-6" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Voltage="5 V" Out="false" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-7" mainComp="false" Show_id="false" Show_Val="false" Pos="56,-108" rotation="180" hflip="1" vflip="1" label="Fixed Voltage-7" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Voltage="5 V" Out="true" />
+
+<item itemtype="LedBar" CircId="LedBar-70" mainComp="false" Show_id="false" Show_Val="false" Pos="-144,100" rotation="180" hflip="1" vflip="1" label="LedBar-70" idLabPos="-16,-44" labelrot="0" valLabPos="-16,-56" valLabRot="0" Color="Yellow" Size="8 _Leds" Grounded="false" Threshold="2.4 V" MaxCurrent="30 mA" Resistance="0.6 Ω" />
+
+<item itemtype="Ground" CircId="Ground-72" mainComp="false" Show_id="false" Show_Val="false" Pos="-264,88" rotation="0" hflip="1" vflip="1" label="Ground-72" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Node" CircId="Node-73" mainComp="false" Pos="-172,68" />
+
+<item itemtype="Node" CircId="Node-74" mainComp="false" Pos="-180,68" />
+
+<item itemtype="Node" CircId="Node-75" mainComp="false" Pos="-188,68" />
+
+<item itemtype="Node" CircId="Node-76" mainComp="false" Pos="-196,68" />
+
+<item itemtype="Node" CircId="Node-77" mainComp="false" Pos="-204,68" />
+
+<item itemtype="Node" CircId="Node-78" mainComp="false" Pos="-212,68" />
+
+<item itemtype="Node" CircId="Node-79" mainComp="false" Pos="-220,68" />
+
+<item itemtype="Node" CircId="Node-80" mainComp="false" Pos="-252,68" />
+
+<item itemtype="Node" CircId="Node-81" mainComp="false" Pos="-244,68" />
+
+<item itemtype="Node" CircId="Node-82" mainComp="false" Pos="-236,68" />
+
+<item itemtype="Node" CircId="Node-83" mainComp="false" Pos="-228,68" />
+
+<item itemtype="Connector" uid="Connector-1" startpinid="Fixed Voltage-6-outnod" endpinid="mega328PB-2-PORTD3" pointList="-76,-108,-76,4" />
+
+<item itemtype="Connector" uid="Connector-2" startpinid="Fixed Voltage-7-outnod" endpinid="mega328PB-2-PORTD0" pointList="40,-108,-36,-108,-36,-20" />
+
+<item itemtype="Connector" uid="Connector-233" startpinid="LedBar-70-led0-pinP" endpinid="mega328PB-2-PORTC1" pointList="-128,124,60,124,60,4,28,4" />
+
+<item itemtype="Connector" uid="Connector-234" startpinid="mega328PB-2-PORTC2" endpinid="LedBar-70-led1-pinP" pointList="4,-20,52,-20,52,116,-128,116" />
+
+<item itemtype="Connector" uid="Connector-235" startpinid="mega328PB-2-PORTC3" endpinid="LedBar-70-led2-pinP" pointList="-4,-20,-4,-28,44,-28,44,108,-128,108" />
+
+<item itemtype="Connector" uid="Connector-237" startpinid="mega328PB-2-PORTC4" endpinid="LedBar-70-led3-pinP" pointList="-12,-20,-12,-36,36,-36,36,100,-128,100" />
+
+<item itemtype="Connector" uid="Connector-240" startpinid="LedBar-70-led6-pinN" endpinid="Node-73-1" pointList="-160,76,-172,76,-172,68" />
+
+<item itemtype="Connector" uid="Connector-241" startpinid="LedBar-70-led7-pinN" endpinid="Node-73-0" pointList="-160,68,-172,68" />
+
+<item itemtype="Connector" uid="Connector-243" startpinid="LedBar-70-led5-pinN" endpinid="Node-74-1" pointList="-160,84,-180,84,-180,68" />
+
+<item itemtype="Connector" uid="Connector-244" startpinid="Node-73-2" endpinid="Node-74-0" pointList="-172,68,-180,68" />
+
+<item itemtype="Connector" uid="Connector-246" startpinid="LedBar-70-led4-pinN" endpinid="Node-75-1" pointList="-160,92,-188,92,-188,68" />
+
+<item itemtype="Connector" uid="Connector-247" startpinid="Node-74-2" endpinid="Node-75-0" pointList="-180,68,-188,68" />
+
+<item itemtype="Connector" uid="Connector-249" startpinid="LedBar-70-led3-pinN" endpinid="Node-76-1" pointList="-160,100,-196,100,-196,68" />
+
+<item itemtype="Connector" uid="Connector-250" startpinid="Node-75-2" endpinid="Node-76-0" pointList="-188,68,-196,68" />
+
+<item itemtype="Connector" uid="Connector-252" startpinid="LedBar-70-led2-pinN" endpinid="Node-77-1" pointList="-160,108,-204,108,-204,68" />
+
+<item itemtype="Connector" uid="Connector-253" startpinid="Node-76-2" endpinid="Node-77-0" pointList="-196,68,-204,68" />
+
+<item itemtype="Connector" uid="Connector-255" startpinid="LedBar-70-led1-pinN" endpinid="Node-78-1" pointList="-160,116,-212,116,-212,68" />
+
+<item itemtype="Connector" uid="Connector-256" startpinid="Node-77-2" endpinid="Node-78-0" pointList="-204,68,-212,68" />
+
+<item itemtype="Connector" uid="Connector-258" startpinid="LedBar-70-led0-pinN" endpinid="Node-79-1" pointList="-160,124,-220,124,-220,68" />
+
+<item itemtype="Connector" uid="Connector-259" startpinid="Node-78-2" endpinid="Node-79-0" pointList="-212,68,-220,68" />
+
+<item itemtype="Connector" uid="Connector-261" startpinid="LedBar-70-led4-pinP" endpinid="Node-80-1" pointList="-128,92,-100,92,-100,36,-252,36,-252,68" />
+
+<item itemtype="Connector" uid="Connector-263" startpinid="Node-80-2" endpinid="Ground-72-Gnd" pointList="-252,68,-264,68,-264,72" />
+
+<item itemtype="Connector" uid="Connector-264" startpinid="LedBar-70-led5-pinP" endpinid="Node-81-1" pointList="-128,84,-108,84,-108,44,-244,44,-244,68" />
+
+<item itemtype="Connector" uid="Connector-266" startpinid="Node-81-2" endpinid="Node-80-0" pointList="-244,68,-252,68" />
+
+<item itemtype="Connector" uid="Connector-267" startpinid="LedBar-70-led6-pinP" endpinid="Node-82-1" pointList="-128,76,-116,76,-116,52,-236,52,-236,68" />
+
+<item itemtype="Connector" uid="Connector-269" startpinid="Node-82-2" endpinid="Node-81-0" pointList="-236,68,-244,68" />
+
+<item itemtype="Connector" uid="Connector-270" startpinid="LedBar-70-led7-pinP" endpinid="Node-83-1" pointList="-128,68,-128,60,-228,60,-228,68" />
+
+<item itemtype="Connector" uid="Connector-271" startpinid="Node-79-2" endpinid="Node-83-0" pointList="-220,68,-228,68" />
+
+<item itemtype="Connector" uid="Connector-272" startpinid="Node-83-2" endpinid="Node-82-0" pointList="-228,68,-236,68" />
+
+</circuit>
