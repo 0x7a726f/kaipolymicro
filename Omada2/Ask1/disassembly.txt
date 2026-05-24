@@ -1,0 +1,19 @@
+
+E:\Code\ARM\IDE\Ask1\ask1.hex:     file format ihex
+
+
+Disassembly of section .sec1:
+
+08000000 <.sec1>:
+ 8000000:	200a      	movs	r0, #10
+ 8000002:	2103      	movs	r1, #3
+ 8000004:	0082      	lsls	r2, r0, #2
+ 8000006:	1852      	adds	r2, r2, r1
+ 8000008:	2105      	movs	r1, #5
+ 800000a:	1a52      	subs	r2, r2, r1
+ 800000c:	4b01      	ldr	r3, [pc, #4]	@ (0x8000014)
+ 800000e:	601a      	str	r2, [r3, #0]
+ 8000010:	e7fe      	b.n	0x8000010
+ 8000012:	0000      	movs	r0, r0
+ 8000014:	1000      	asrs	r0, r0, #32
+ 8000016:	2000      	movs	r0, #0
